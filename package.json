@@ -1,0 +1,30 @@
+{
+  "name": "gamelobby",
+  "private": false,
+  "version": "1.0.0",
+  "description": "ES6 JS classes for Game Lobbies with friend lobbies, heartbeats and disconnect handlers",
+  "keywords": [
+    "gamelobby",
+    "game server",
+    "gameserver",
+    "game",
+    "server",
+    "lobby",
+    "manager",
+    "redis",
+    "disconnect",
+    "friend",
+    "lobbies",
+    "heartbeat",
+    "timeouts",
+    "timeout",
+    "es6"
+  ],
+  "dependencies": {
+    "uuid": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/falconscript/gamelobby"
+  }
+}
