@@ -10,7 +10,7 @@ npm install gamelobby --save
 
 ## Usage
 
-This is a Game Lobby implementation I made for http://c-cfalcon.rhcloud.com/WikiRace  
+This is a Game Lobby implementation I made for http://x64projects.tk/WikiRace  
 
 Main features:
  - Friend lobbies by generating uuidv4 hashes for lobby names.  
@@ -60,4 +60,4 @@ Add easier Redis support, maybe as a subclass.
 Add teams support.  
 
 ## Credits
-http://c-cfalcon.rhcloud.com
+http://x64projects.tk/
