@@ -19,14 +19,14 @@ Main features:
  - Websocket based (using SailsJS, but can be overridden) for maximum speed.  
 
 
-Unfortunately, the usage of this module is pretty difficult.  
+Unfortunately, the usage of this module probably requires reading through the code some.  
 Below, I provide a very simple part of using it. To fully understand it, you will  
 probably have to read the code.
 
 
 ```js
-var gamelobby = require('gamelobby');
-var Player = gamelobby.Player;
+const gamelobby = require('gamelobby');
+const Player = gamelobby.Player;
 
 class YourGameNameLobby extends gamelobby.Lobby {
   constructor(config) {
@@ -55,9 +55,10 @@ class YourGameNameLobby extends gamelobby.Lobby {
 };
 ```
 
+Used in tandem with my LobbyClient.js on the front end (to be released in future)  helps a lot.
+
 ## TODO:
 Add easier Redis support, maybe as a subclass.  
-Add teams support.  
 
 ## Credits
 http://x64projects.tk/
