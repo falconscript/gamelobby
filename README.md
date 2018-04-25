@@ -46,8 +46,8 @@ class LobbyManager extends EventEmitter {
 };
 ```
 
+Incorporate gamelobby into a web app or networked application by creating lobbies and adding players.
 ```js
-// Example of code you would write
 const gamelobby = require('gamelobby');
 const lobbyManager = new gamelobby.LobbyManager();
 
@@ -87,14 +87,17 @@ lobbyManager.on("GAME_OVER", (lobby) => {
 
     // example idea of saving data
     await SomeDatabase.update(player.playerConfig.username, { win: didWin, loss: didLose, disconnects: didDisconnect });
-    lobby.destroyLobby(); // remove lobby from lobbyManager
+  });
 
+  lobby.destroyLobby(); // remove lobby from lobbyManager
 });
+
 ```
 
 Lobbies automatically check for disconnections by receiving heartbeats every few seconds.  
 Have your web app send heartbeats to another endpoint and update the lobby.  
 Timeouts result in USER_DISCONNECT being emitted.  
+
 ```js
 // Update heartbeat for accurate disconnections
 let lobby = lobbyManager.getLobbyBySocket(req.socket); // req.socket is your socket identifier (in sails at least)
