@@ -54,7 +54,7 @@ const lobbyManager = new gamelobby.LobbyManager();
 
 // Get a lobby with specified config.
 let lobbyConfig = { mode: "BATTLE" }; // other ideas: { isFriendLobby: true, isTeamGame: true }
-let lobby = lobbyManager.getOpenLobbyWithCriteria(lobbyConfig); // ONLY gets lobbies where mode is "BATTLE"
+let lobby = lobbyManager.getFirstOpenLobbyWithCriteria(lobbyConfig); // ONLY gets lobbies where mode is "BATTLE"
 
 // If no lobbies exist with these requirements, create one
 if (!lobby) {

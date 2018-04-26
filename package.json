@@ -1,7 +1,7 @@
 {
   "name": "gamelobby",
   "private": false,
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "ES6 JS classes for Game Lobbies with friend lobbies, heartbeats and disconnect handlers",
   "keywords": [
     "gamelobby",
@@ -22,6 +22,8 @@
     "es6"
   ],
   "dependencies": {
+    "json-stable-stringify": "^1.0.1",
+    "objecthasherjs": "^1.0.1",
     "uuid": "^3.1.0"
   },
   "repository": {
