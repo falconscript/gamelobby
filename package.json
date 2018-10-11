@@ -1,7 +1,7 @@
 {
   "name": "gamelobby",
   "private": false,
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "ES6 JS classes for Game Lobbies with friend lobbies, heartbeats and disconnect handlers",
   "keywords": [
     "gamelobby",
